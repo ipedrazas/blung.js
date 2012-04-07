@@ -1,0 +1,80 @@
+<!doctype html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <title>:blibb and LungoJs</title>
+    <meta name="description" content="">
+    <meta name="author" content="Ivan Pedrazas (@ipedrazas)">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- For iPhone 4 with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/icon@2x.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/icon.png">
+    <link rel="apple-touch-startup-image" href="assets/images/default.png">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="release/lungo-1.2.min.css">
+    <link rel="stylesheet" href="assets/css/blung.theme.default.css">
+    <link rel="stylesheet" href="assets/sugars/lungo.sugar.growl.min.css">
+</head>
+
+<body class="app">
+    <section id="login">
+        <article class="splash indented">
+            <div>
+                <h1>bLung.<span class="semi-opacity">js<span></h1>
+                <input type="text" id="bluser" placeholder="Type your :blibb user" />
+                <input type="password" id="blassword" placeholder="Type your :blibb password" />
+                <a href="#" id="btnLogin" class="button big" >Please, Come on In</a>
+                
+            </div>
+        </article>
+    </section>
+
+	<section id="main">
+		<header data-title="blung.js">
+            <nav class="onright">               
+            </nav>
+		</header>
+
+        <article  id="music-items" class="list scrollable">
+        </article>
+
+        <footer class="toolbar with-labels">
+            <nav>
+                <a href="#Playlists" data-target="article" class="current" data-label=":blibb Music" data-icon="music"></a>
+            </nav>
+        </footer>
+    </section>
+
+    <section id="view">
+        <header data-title="blung.js" >
+            <nav class="onleft">
+                <a href="#"  class="current" data-icon="left"><abbr>Back</abbr></a>
+            </nav>
+        </header>
+        <article class="playSong">
+        </article>
+
+        <footer class="toolbar with-labels">
+            <nav>
+                <a href="#Playlists" data-target="article" class="current" data-label=":blibb Music" data-icon="music"></a>
+            </nav>
+        </footer>
+    </section>
+
+    <!-- LungoJS (Production mode) -->
+    <script src="release/lungo-1.2.packed.js"></script>
+    <script src="assets/sugars/lungo.sugar.growl.min.js"></script>
+    <!-- LungoJS - Sandbox App -->
+    <script src="app/app.js"></script>
+    <script src="app/data.js"></script>
+    <script src="app/events.js"></script>
+    <script src="app/services.js"></script>
+    <script src="app/view.js"></script>
+</body>
+</html>
